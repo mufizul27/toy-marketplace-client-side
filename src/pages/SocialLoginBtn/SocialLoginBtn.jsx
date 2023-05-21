@@ -1,4 +1,3 @@
-/*eslint-disable no-unused-vars */
 import React, { useContext } from "react";
 import { useState } from "react";
 import "./SocialLoginBtn.css";
