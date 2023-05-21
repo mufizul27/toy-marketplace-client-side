@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../component/providers/AuthProvider";
-import Doll from "../Doll/Doll";
 import { Button, Table } from "react-bootstrap";
 import "./AllToys.css";
 import { Link, useNavigate } from "react-router-dom";

@@ -79,7 +79,7 @@ const AuthProvider = ({ children }) => {
 
   var [toys, setToy] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/toysList")
+    fetch("b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app")
       .then((res) => res.json())
       .then((data) => setToy(data.sort((a, b) =>descending? (b.price - a.price):(a.price - b.price))));
   }, [isUpdate,descending]);

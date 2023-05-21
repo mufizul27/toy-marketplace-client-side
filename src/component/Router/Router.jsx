@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   {
     loader: () =>
       fetch(
-        "https://bangladeshi-foods-recipe-server-jy589pije-bilkish-akther.vercel.app/recipe"
+        "b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app"
       ),
     path: "/",
     element: <Header></Header>,

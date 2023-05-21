@@ -29,7 +29,7 @@ const AddToy = () => {
     data.sellerEmail = user.email;
     console.log(data);
 
-      fetch("http://localhost:5000/post-toy", {
+      fetch("b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
