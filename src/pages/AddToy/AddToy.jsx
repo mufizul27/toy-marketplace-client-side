@@ -4,6 +4,10 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../component/providers/AuthProvider.jsx";
 import './AddToy.css'
 import { useLocation, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const AddToy = () => {
   const { user,setTitle } = useContext(AuthContext);
@@ -14,11 +18,12 @@ const AddToy = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
+   
     data.rating = "0.0";
     data.sellerName = user.displayName;
     data.sellerEmail = user.email;
@@ -31,6 +36,17 @@ const AddToy = () => {
       })
         .then((res) => res.json())
         .then((result) => {
+          reset();
+          toast.success('Add Product Successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
           console.log(result);
         });
       console.log(data);
@@ -38,6 +54,7 @@ const AddToy = () => {
 
   return (
     <div className="add-job-container">
+      <ToastContainer />
       <div className="add-job row">
         <div className="col-md-8">
           <form onSubmit={handleSubmit(onSubmit)}>

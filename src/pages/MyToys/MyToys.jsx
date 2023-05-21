@@ -7,6 +7,7 @@ import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
 import { useLocation, useNavigate } from "react-router-dom";
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSort } from '@fortawesome/free-solid-svg-icons'
+import './MyToys.css'
 
 const MyToys = () => {
   const { toys, setSelectToy, user, setUpdate,setDescending,
@@ -73,15 +74,15 @@ const MyToys = () => {
     <div>
       {/* search Button */}
 
-      <div>
+      <div className="searchButton"  >
         <input
-          placeholder="Search Your Project"
+          placeholder="Search Your Product"
           type="search"
           onChange={(e) => handleSearch(e.target.value)}
         />
-        <Button>Search</Button>
+        <Button className="p-2" >Search</Button>
       </div>
-      <button><FontAwesomeIcon icon={faSort} onClick={handleSorting} size="3x"/></button>
+      <button className="iconCenter" ><FontAwesomeIcon icon={faSort} onClick={handleSorting} size="3x"/></button>
 
       {/* // myToy filter */}
       {filterToys.length != 0 ? (
