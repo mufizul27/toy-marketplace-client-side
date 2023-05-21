@@ -2,7 +2,7 @@
 
 # _____________________ Last Second Assignment ____________________
 
- # Live Link https://6455232b4669d62967965c19--boisterous-baklava-5f25b6.netlify.app/
+ # Live Link 
  
  ## Table of contents
 * [General info](#general-info)

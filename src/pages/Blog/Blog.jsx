@@ -45,8 +45,7 @@ const Blog = () => {
           expired, the server processes the request and returns the requested
           data. Access Token Expiration: Access tokens have a limited lifespan,
           typically a short duration, to minimize the impact of unauthorized
-          access if a token is compromised. When an access token expires, the
-          client application needs to obtain a new one.
+         
         </p>
 
         <h2 className="text-2xl"> 2.Compare SQL and NoSQL databases?</h2>
