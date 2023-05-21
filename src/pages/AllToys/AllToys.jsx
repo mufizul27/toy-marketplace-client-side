@@ -48,7 +48,7 @@ const AllToys = () => {
       <button className="iconCenter">
         <FontAwesomeIcon icon={faSort} onClick={handleSorting} size="3x" />
       </button>
-      <Table striped bordered hover className="mt-4 container">
+      {/* <Table striped bordered hover className="mt-4 container">
         <thead>
           <tr>
             <th>Seller Name</th>
@@ -56,7 +56,7 @@ const AllToys = () => {
             <th>SubCategory</th>
             <th>Price</th>
             <th>Quantity</th>
-          </tr>
+          </tr> */}
         </thead>
         <tbody>
           {searchToys?.map((toy, index) => (
