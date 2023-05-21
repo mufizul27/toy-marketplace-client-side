@@ -6,11 +6,12 @@ import './AddToy.css'
 import { useLocation, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ApiBaseUrl from "../../component/app_const/server_info.jsx";
 
 
 
 const AddToy = () => {
-  const { user,setTitle } = useContext(AuthContext);
+  const { user,setTitle,setUpdate } = useContext(AuthContext);
   setTitle("AddToy")
   const location = useLocation();
   console.log(location);
@@ -29,7 +30,7 @@ const AddToy = () => {
     data.sellerEmail = user.email;
     console.log(data);
 
-      fetch("b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app", {
+      fetch(`${ApiBaseUrl}/post-toy`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -37,6 +38,7 @@ const AddToy = () => {
         .then((res) => res.json())
         .then((result) => {
           reset();
+          setUpdate(`update +${Math.random() * 10000000}`);
           toast.success('Add Product Successfully', {
             position: "top-right",
             autoClose: 5000,
@@ -96,7 +98,7 @@ const AddToy = () => {
             />
             <br />
             <select className="text-input" {...register("subCategory")}>
-              <option value="Baby Bolls">Baby Boll</option>
+              <option value="Baby Dolls">Baby Dolls</option>
               <option value="Barbie">Barbie</option>
               <option value="American girl">American girl</option>
             </select>

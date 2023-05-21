@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   {
     loader: () =>
       fetch(
-        "b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app"
+        `b7a11-toy-marketplace-server-side-mufizul27-5em3l23qt-p-hero.vercel.app`
       ),
     path: "/",
     element: <Header></Header>,
@@ -92,10 +92,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "*",
-    element: <ErrorPage></ErrorPage>,
-  },
+   {
+        path: "*",
+        element: <ErrorPage></ErrorPage>,
+      },
 ]);
 
 export default router;

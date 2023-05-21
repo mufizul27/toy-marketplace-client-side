@@ -1,7 +1,5 @@
 /*eslint-disable no-unused-vars */
 import React, { useState, useEffect, useContext } from "react";
-
-import Header from "../Header/Header";
 import Banner from "../Banner/Banner";
 
 import "./Home.css";
