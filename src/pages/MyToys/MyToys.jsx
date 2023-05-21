@@ -141,7 +141,7 @@ const MyToys = () => {
           </tbody>
         </Table>
       ) : (
-        <h1>No Toys</h1>
+        <h1 className="text-center bold">No Toys</h1>
       )}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
