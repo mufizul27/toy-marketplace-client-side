@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../component/providers/AuthProvider";
-import Doll from "../Doll/Doll";
+
 import { Button, Modal, Table } from "react-bootstrap";
 import "./MyToys.css";
 import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";

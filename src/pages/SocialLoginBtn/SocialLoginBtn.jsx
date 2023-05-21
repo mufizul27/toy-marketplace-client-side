@@ -8,7 +8,7 @@ import {
   signInWithPopup,
   GithubAuthProvider,
 } from "firebase/auth";
-import app from "../../firebase/firebase.config";
+
 import { AuthContext } from "../../component/providers/AuthProvider";
 
 const SocialLoginBtn = () => {
