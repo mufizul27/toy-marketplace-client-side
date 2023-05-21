@@ -18,7 +18,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption className="mb-16">
-            <p>
+            <p className="text-color-design">
               Step into the magical realm of dolls at our toy shop. Experience
               the joy of choosing from an extensive selection of dolls, ranging
               from classic favorites to the latest trendy characters. Let your
