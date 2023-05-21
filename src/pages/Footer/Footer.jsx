@@ -66,7 +66,7 @@ function Footer() {
         </div>
         <div className="row mt-4">
           <div className="col-md-12 text-center">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <p className="text-color">&copy; 2023 Your Company. All rights reserved.</p>
           </div>
         </div>
       </div>
