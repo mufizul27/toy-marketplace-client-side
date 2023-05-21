@@ -8,7 +8,7 @@ import { faSort } from "@fortawesome/free-solid-svg-icons";
 
 const AllToys = () => {
   const { toys, setTitle, setDescending, descending } = useContext(AuthContext);
-  var [searchToys, setSearchToys] = useState(t);
+  var [searchToys, setSearchToys] = useState(toys);
  
   setTitle("All Toys");
   const navigator = useNavigate();
